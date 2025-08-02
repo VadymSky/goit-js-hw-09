@@ -84,7 +84,7 @@ new SimpleLightbox('.gallery a', {
 });
 
 document.addEventListener('click', (e) => {
-  let container = document.getElementById('click-effect-container');
+  const container = document.getElementById('click-effect-container');
   let circle = document.createElement('div');
   circle.classList.add('click-circle');
 
