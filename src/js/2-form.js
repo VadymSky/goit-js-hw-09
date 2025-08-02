@@ -3,7 +3,7 @@ const email = form.elements.email;
 const textarea = form.elements.message;
 const localStorageKey = "feedback-form-state";
 
-let savedFormData = JSON.parse(localStorage.getItem(localStorageKey)) || {};
+const savedFormData = JSON.parse(localStorage.getItem(localStorageKey)) || {};
 
 let formData = {
   email: savedFormData.email || "",
