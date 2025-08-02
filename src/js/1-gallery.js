@@ -70,7 +70,7 @@ const images = [
       },
     ];
     
-const listOfGallery = images
+let listOfGallery = images
     .map(image => `<li class="gallery-item"><a class="gallery-link" href="${image.original}"><img class="gallery-image" src="${image.preview}" alt="${image.description}"/></a></li>`)
     .join('');
   
@@ -84,8 +84,8 @@ new SimpleLightbox('.gallery a', {
 });
 
 document.addEventListener('click', (e) => {
-  const container = document.getElementById('click-effect-container');
-  const circle = document.createElement('div');
+  let container = document.getElementById('click-effect-container');
+  let circle = document.createElement('div');
   circle.classList.add('click-circle');
 
   circle.style.left = `${e.clientX}px`;
