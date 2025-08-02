@@ -5,7 +5,7 @@ const localStorageKey = "feedback-form-state";
 
 const savedFormData = JSON.parse(localStorage.getItem(localStorageKey)) || {};
 
-let formData = {
+const formData = {
   email: savedFormData.email || "",
   message: savedFormData.message || ""
 };
